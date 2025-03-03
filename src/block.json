@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/theme-carousel",
+  "version": "1.0.1",
+  "title": "Theme Carousel",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "Carousel block.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "theme-carousel",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "type": {
+      "type": "string",
+      "default": "slide"
+    },
+    "speed": {
+      "type": "number",
+      "default": 400
+    },
+    "drag": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "interval": {
+      "type": "number",
+      "default": 5000
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "perPage": {
+      "type": "number",
+      "default": 1
+    },
+    "perMove": {
+      "type": "number",
+      "default": 1
+    }
+  }
+}
